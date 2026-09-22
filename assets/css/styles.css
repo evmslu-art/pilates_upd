@@ -1,0 +1,433 @@
+/*
+Theme Name: Pilates PRO
+Author: Ekaterina
+Description: Custom WordPress theme for Pilates PRO
+Version: 1.0
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/Muller/MullerRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MullerBold';
+    src: url('../fonts/Muller/MullerBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MullerExtraBold';
+    src: url('../fonts/Muller/MullerExtraBold.otf') format('opentype');
+}
+
+
+body {
+    font-family: Muller, sans-serif;
+}
+
+.header {
+    padding: 14px 0;
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2)
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header .container, .main .container {
+    font-size: 0;
+}
+
+/*2026.09.17_изм CSS Grid Layout*/
+.header .container {
+    display: grid;
+    grid-template-columns: 72px 1fr 28px;
+    align-items: center;
+}
+
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 185px;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+.menu {
+    /*2026.09.17_изм CSS Grid Layout*/
+    /*margin-left: 187px;*/
+    justify-self: center;
+    /*2026.09.17_изм CSS Grid Layout*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 25px;
+    vertical-align: middle;
+}
+
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(206, 206, 206);
+    /*text-transform: uppercase;*/
+}
+
+
+.header-lk {
+    display: inline-block;
+    vertical-align: middle;
+    /*2026.09.17_изм CSS Grid Layout*/
+    /*margin-left: 153px;*/
+}
+
+.block1 {
+    padding: 120px 0 50px 0;
+    background-color: rgb(250, 251, 252);
+}
+
+
+/*2026.09.17_изм CSS Grid Layout*/
+/*.main-info {*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*    max-width: 552px;*/
+/*}*/
+
+/*2026.09.17_изм CSS Grid Layout*/
+/*.main-image {*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*margin-left: 51px;*/
+/*}*/
+
+/*2026.09.17_изм CSS Grid Layout*/
+.block1 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 200px;
+    /*grid-template-rows: repeat(4, minmax(min-content, max-content));*/
+
+}
+
+/*2026.09.17_изм CSS Grid Layout*/
+.block1-image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+}
+
+/*2026.09.17_изм CSS Grid Layout*/
+.block1-image img {
+    max-width: 100%;
+}
+
+.block1 h1 {
+    font-size: 45px;
+    font-family: MullerBold;
+    color: #FE6388;
+    /*color: rgb(216, 68, 190);*/
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.block1 h1 span {
+    color: rgb(118 112 117);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.block1-description {
+    margin-bottom: 119px;
+    font-size: 16px;
+    color: rgb(118 112 117);
+    line-height: 1.5;
+}
+
+.block2 {
+    padding: 140px 0 50px 0;
+    background-color: #262626;
+}
+
+.block2-title {
+    font-size: 45px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(118 112 117);
+    margin-bottom: 30px;
+}
+
+.block2-title span {
+    color: #FE6388;
+    /*color:  rgb(216, 68, 190);*/
+}
+
+
+.block2 .lk {
+    /*border-color: rgb(199, 72, 187);*/
+    /*display: grid;*/
+    background-color: rgb(118 112 117);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 520px;
+    height: 310px;
+    padding: 25px;
+}
+
+.title-lk {
+    font-size: 22px;
+    color: rgb(206, 206, 206);
+    font-family: MullerBold, sans-serif;
+    margin-bottom: 20px;
+
+}
+
+/*.title-lk span {*/
+/*  color: #FE6388;*/
+/*}*/
+
+.base-input {
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border-width: 1px;
+    color: rgb(216, 68, 190);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    /*color: rgb(161 51 141);*/
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    margin: 10px 0 10px 60px;
+
+}
+
+.block2 .base-input::placeholder {
+    color: rgb(118 112 117);
+}
+
+.lk a {
+    font-size: 16px;
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    margin: 11px 0 20px 62px;
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-family: MullerBold, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn.btn-pink {
+    background-color: #FE6388;
+    width: 402px;
+    height: 47px;
+    margin: 10px 0 10px 60px;
+    /*text-transform: capitalize;*/
+}
+
+.btn.btn-pink:hover {
+    background-color: #853445;
+}
+
+.services {
+    padding: 100px 0 50px 0;
+}
+
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services-title {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: MullerBold, sans-serif;
+    color: #FE6388;
+    text-align: center;
+}
+
+.service-item {
+    /*position: relative;*/
+    width: 380px;
+    margin-top: 81px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    background-color: #FE6388;
+    border-radius: 10px;
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    text-align: center;
+    /*margin-top: 24px;*/
+}
+
+.service-action {
+    /*position: relative;*/
+    margin-top: 20px;
+    /*text-align: center;*/
+}
+
+.service-image {
+    padding: 0 20px;
+    height: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-image img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.service-title {
+    margin-top: 20px;
+    font-family: MullerBold, sans-serif;
+    font-size: 40px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+.service-select {
+    /*width: 100%;*/
+    margin-bottom: 20px;
+    width: 350px;
+    height: 46px;
+    padding: 0 40px 0 15px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    color: rgb(118, 112, 117);
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.service-select:hover,
+.service-select:focus {
+    border-color: #FE6388;
+    box-shadow: 0 0 0 3px rgba(254, 99, 136, 0.35);
+}
+
+.service-action .btn {
+    margin-top: 15px;
+}
+
+.btn.btn-grey {
+    background-color: rgb(118, 112, 117);
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btn.btn-grey:hover {
+    background-color: rgb(111 112 112 / 0.67);
+
+}
+
+.actions {
+    /*margin-top: 70px;*/
+    text-align: center;
+}
+
+
+.btn-transparent {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 60px;
+    background-color: transparent;
+    border: 1px solid #FE6388;
+    font-size: 22px;
+    color: rgb(205, 205, 205);
+    /*text-transform: uppercase;*/
+}
+
+.block3 {
+    padding: 50px 0 50px 0;
+    background-color: rgb(111, 112, 112);
+}
+
+.block3-title {
+    font-size: 45px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(205, 205, 205);
+    margin-bottom: 30px;
+}
+
+.feedback {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.feedback .feedback-user {
+
+    background-color: #Ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+
+.footer {
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0 0 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    padding: 14px 0 14px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer .rights {
+    font-size: 16px;
+    color: rgb(186, 179, 179);
+    margin-left: 300px;
+}

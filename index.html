@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilates PRO</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <!--        2026.09.21_изм CSS Grid Layout adaptive-->
+        <!--        <div class="burger">-->
+        <!--            ☰-->
+        <!--        </div>-->
+        <a href="#" class="header-logo"><img src="assets/images/logo.png" alt="Логотип"></a>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+                <li>
+                    <a href="#">Расписание</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="header-lk"><img src="assets/images/iconlk.png" alt="Иконка ЛК"></a>
+    </div>
+</header>
+
+<section class="block1">
+    <div class="container">
+        <!--        2026.09.21_изм CSS Grid Layout удалена обертка "main-info"-->
+        <h1>
+            Пилатес <span>и йога</span>
+        </h1>
+
+        <div class="block1-description">
+            Здесь мы опубликовали свои наблюдения, интересные заметки, которые мы почерпнули на протяжении нескольких
+            лет, занимаясь пилатесом йогой. Наша цель - это помочь людям получить более глубокое понимание о том, как
+            действительно надо работать над собой, занимаясь йогой или пилатесом.
+        </div>
+        <div class="block1-image">
+            <img src="assets/images/1_img2.png" alt="Photo1">
+        </div>
+    </div>
+</section>
+
+<section class="block2">
+    <div class="container">
+        <h1 class="block2-title">
+            Регистрируйся <span>онлайн!</span>
+        </h1>
+        <div class="lk">
+            <div class="title-lk">
+                Вход в <span>личный кабинет</span>
+            </div>
+            <input type="text" class="base-input" placeholder="Имя">
+            <input type="text" class="base-input" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <button class="btn btn-pink">
+                Авторизация
+            </button>
+        </div>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services-title">
+                    Выберите направление
+                </h2>
+                <div class="service-items">
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="assets/images/studio_test1.png" alt="Studio1">
+                        </div>
+                        <div class="service-title">
+                            Пилатес Студио
+                        </div>
+                        <form class="service-action">
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите занятие
+                                </option>
+
+                                <option value="pilates-reformer">
+                                    Pilates Reformer / Реформер
+                                </option>
+
+                                <option value="pilates-combo">
+                                    Pilates COMBO: мячик (25 см) и лента
+                                </option>
+
+                                <option value="band-pilates">
+                                    Pilates Resistance Band / Лента сопротивления
+                                </option>
+
+                                <option value="miniball-pilates">
+                                    Pilates, MiniBall 25 cm
+                                </option>
+                                <option value="strong-pilates">
+                                    Strong Pilates / Силовой пилатес
+                                </option>
+                                <option value="full-body-pilates">
+                                    Pilates Full Body / Здоровая спина
+                                </option>
+                                <option value="evening-pilates">
+                                    Evening Pilates / Вечерний пилатес
+                                </option>
+                                <option value="morning-pilates">
+                                    Morning Pilates / Утренний пилатес
+                                </option>
+                            </select>
+
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите тип занятия
+                                </option>
+
+                                <option value="pilates-reformer">
+                                    Групповое занятие
+                                </option>
+
+                                <option value="pilates-combo">
+                                    Персональное занятие
+                                </option>
+                            </select>
+
+                            <button class="btn btn-grey" type="submit">
+                                Выбрать
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="assets/images/mat_test1.png" alt="Mat2">
+                        </div>
+                        <div class="service-title">
+                            Пилатес Мат
+                        </div>
+                        <form class="service-action">
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите занятие
+                                </option>
+
+                                <option value="pilates-mat">
+                                    Pilates Mat / Без оборудования
+                                </option>
+
+                                <option value="pilates-advanced">
+                                    Advanced Pilates Mat / (продвинутый уровень)
+                                </option>
+
+                                <option value="gentle-pilates">
+                                    Gentle Pilates Mat / Мягкий пилатес
+                                </option>
+                            </select>
+
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите тип занятия
+                                </option>
+
+                                <option value="pilates-reformer">
+                                    Групповое занятие
+                                </option>
+
+                                <option value="pilates-combo">
+                                    Персональное занятие
+                                </option>
+                            </select>
+
+                            <button class="btn btn-grey" type="submit">
+                                Выбрать
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-image">
+                            <img src="assets/images/reformer_test1.png" alt="Reformer3">
+                        </div>
+                        <div class="service-title">
+                            Pilates for Kids
+                        </div>
+
+                        <form class="service-action">
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите занятие
+                                </option>
+
+                                <option value="pilates-kids">
+                                    Pilates for Kids / Пилатес для детей
+                                </option>
+                            </select>
+
+                            <select class="service-select" name="service" required>
+                                <option value="" selected disabled>
+                                    Выберите тип занятия
+                                </option>
+
+                                <option value="pilates-reformer">
+                                    Групповое занятие
+                                </option>
+
+                                <option value="pilates-combo">
+                                    Персональное занятие
+                                </option>
+                            </select>
+
+                            <button class="btn btn-grey" type="submit">
+                                Выбрать
+                            </button>
+                        </form>
+
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn btn-transparent">Посмотреть все занятия</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</section>
+
+<section class="block3">
+    <div class="container">
+        <h1 class="block3-title">Отзывы</h1>
+        <div class="feedback">
+            <div class="feedback-user">
+                Обожаю все тренировки с гуру-мастером Татьяной, особенно её профессиональный подход к занятиям,
+                направленным на стретчинг, суставную гимнастику, здоровую спину и пилатес. Шаг за шагом, благодаря…
+            </div>
+            <div class="feedback-user">
+                Обожаю все тренировки с гуру-мастером Татьяной, особенно её профессиональный подход к занятиям,
+                направленным на стретчинг, суставную гимнастику, здоровую спину и пилатес. Шаг за шагом, благодаря…
+            </div>
+            <div class="feedback-user">
+                Обожаю все тренировки с гуру-мастером Татьяной, особенно её профессиональный подход к занятиям,
+                направленным на стретчинг, суставную гимнастику, здоровую спину и пилатес. Шаг за шагом, благодаря…
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+        <span class="rights">
+Все права защищены, 2026
+        </span>
+    </div>
+</footer>
+
+
+</body>
+</html>
