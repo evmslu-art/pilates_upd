@@ -83,6 +83,7 @@ body {
     display: grid;
     grid-template-columns: 72px 1fr 28px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -503,29 +504,23 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    vertical-align: center;
-    /*align-items: center;*/
+    align-items: center;
+
 }
 
 .footer .logo {
-    vertical-align: middle;
-    margin: 0 0 0 70px;
+    /*vertical-align: middle;*/
+    /*margin: 0 0 0 70px;*/
+    padding: 5px 0;
 }
 
 .footer .rights {
     font-size: 16px;
     color: rgb(186, 179, 179);
-    padding: 30px 0 30px 0;
+    /*vertical-align: middle;*/
+    /*padding: 30px 0 30px 0;*/
     /*margin-left: 300px;*/
 }
-
-
-
-
-
-
-
-
 
 
 /*
@@ -587,6 +582,12 @@ Version: 1.0
 .navigation-item.active a,
 .navigation-item a:hover {
     background-color: #e935c8;
+}
+
+.navigation-item svg {
+    fill: #858796;
+    width: 24px;
+    height: 24px;
 }
 
 .navigation-item.active a svg path,
@@ -651,6 +652,7 @@ Version: 1.0
     flex-grow: 1;
     min-width: 0;
     position: relative;
+    z-index: 10;
 }
 
 /*.header {*/
@@ -821,7 +823,6 @@ Version: 1.0
 }
 
 
-
 .header-tasks-item {
     width: 150px;
     padding: 15px 20px;
@@ -933,6 +934,17 @@ Version: 1.0
     margin-bottom: 15px;
 }
 
+.dashboard-title-item a {
+    text-decoration: none;
+}
+.dashboard-title-item a:hover {
+    color: #e935c8;
+}
+
+.dashboard-title-item a:active {
+    color: #d810c6;
+}
+
 .dashboard-time-item {
     font-size: 15px;
     line-height: 20px;
@@ -1006,5 +1018,355 @@ Version: 1.0
 /*    text-align: center;*/
 /*    vertical-align: middle;*/
 /*}*/
+
+
+/*
+Theme Name: Pilates PRO --- Vlog - Article
+Author: Ekaterina
+Description: Custom WordPress theme for Pilates PRO
+Version: 1.0
+*/
+
+/*.header {*/
+/*    background-color: #293254;*/
+/*    padding-block: 28px 28px;*/
+/*}*/
+
+/*.container {*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+.header .menu-article {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 713px;
+}
+
+/*.header .logo {*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+.header .menu-article ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.header .menu-article ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 35px;
+}
+
+.header .menu-article ul li:last-child {
+    margin-right: 0;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: #e935c8;
+}
+
+/*.header .container {*/
+/*    font-size: 0;*/
+/*}*/
+
+svg.filled:hover path {
+    fill: #e935c8;
+}
+
+svg.stroked:hover path {
+    stroke: #e935c8;
+}
+
+svg.edit-icon:hover path:nth-child(2) {
+    stroke: #e935c8;
+
+}
+
+svg.edit-icon:hover path:nth-child(1) {
+    fill: #e935c8;
+}
+
+.main {
+    background-color: #FBFBFC;
+}
+
+.article-container {
+    padding-block: 30px 10px;
+    /*margin-left: 20px;*/
+}
+
+.return-back {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.return-back > * {
+    vertical-align: middle;
+}
+
+.return-back svg {
+    width: 18px;
+    height: 18px;
+    fill: #e935c8;
+    margin-right: 8px;
+}
+
+.return-back span {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #e935c8;
+}
+
+
+.article-header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #0B0F1F;
+    margin-bottom: 20px;
+}
+
+.article-description {
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 30px;
+    color: #4C4F5F;
+}
+
+.article-section img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.article-section p {
+    padding: 0 10px 0 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #4C4F5F;
+}
+
+.article-section h3 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    color: #4C4F5F;
+    margin: 50px 0 20px 0;
+}
+
+.footer-article {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    /*width: 95px;*/
+    /*height: 95px;*/
+    margin-top: 38px;
+    font-size: 0;
+    margin-left: 900px;
+}
+
+
+.footer-article-image {
+    /*display: inline-block;*/
+    /*align-content: center;*/
+    /*align-items: center;*/
+    /*vertical-align: middle;*/
+    /*width: 100%;*/
+    width: 118px;
+    height: 118px;
+}
+
+.footer-article-image img {
+    border-radius: 50%;
+    margin: 0;
+}
+
+.footer-article-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    padding: 0 10px 0 0;
+}
+
+.footer-article-name {
+    font-size: 22px;
+    line-height: 27px;
+    color: #4C4F5F;
+    margin-bottom: 10px;
+}
+
+.footer-article-description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C4F5F;
+}
+
+.article-additional {
+    margin-top: 58px;
+    padding: 28px 0;
+}
+
+.article-additional-reaction {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article-additional-reaction > * {
+    vertical-align: middle;
+}
+
+.article-additional-reaction:first-child {
+    margin: 0 44px 0 30px;
+}
+
+.article-additional-reaction span {
+    margin-left: 13px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.article-additional-reactions {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article-additional-socials {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 840px;
+}
+
+.article-additional-socials > * {
+    vertical-align: middle;
+}
+
+.article-additional-socials a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.article-additional-socials svg:hover path {
+    fill: #e935c8;
+}
+
+.other-articles {
+    background-color: #F3F3F3;
+    padding: 60px 0;
+}
+
+.other-articles-items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.other-articles h2 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    color: #4C4F5F;
+    margin-bottom: 19px;
+}
+
+.other-article {
+    display: flex;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    /*grid-template-columns: 1fr fit-content(270px) 1fr;*/
+    /*grid-template-rows: 1fr 1fr 1fr fit-content(200px) 1fr 1fr;*/
+
+    /*max-width: 580px;*/
+    /*max-width: 555px;*/
+
+    background-color: #Ffffff;
+    border-radius: 10px;
+    /*display: inline-block;*/
+    vertical-align: middle;
+    margin: 0 20px;
+    padding-right: 25px;
+}
+
+
+.other-article-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.other-article-image img {
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /*object-fit: cover;*/
+}
+
+.other-article-info {
+    /*/ display: inl1ine-block;*/
+    vertical-align: middle;
+    margin-left: 26px;
+    max-width: 270px;
+}
+
+.other-article-category {
+    font-size: 10px;
+    /*line-height: 12px;*/
+    letter-spacing: 0.08em;
+    /*text-transform: uppercase;*/
+    color: #989BA7;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.other-article h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    color: #0B0F1F;
+    margin-bottom: 6px;
+}
+
+.other-article-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5B5B5B;
+    text-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+
+.other-article-extra {
+    margin-bottom: 12px;
+}
+
+.other-article-extra span {
+    font-size: 12px;
+    line-height: 15px;
+    color: #989BA7;
+    margin-right: 100px;
+}
+
+.other-article-extra a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    /*text-transform: uppercase;*/
+    color: #989BA7;
+    text-decoration: none;
+}
+
+.other-article-extra a:hover {
+    color: #e935c8;
+}
 
 
